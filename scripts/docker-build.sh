@@ -5,4 +5,4 @@ project_dirirectory=$script_dirirectory/..
 
 cd $project_dirirectory
 
-docker build --tag="czerasz/nginx-geoip2:1.9.4" .
+docker build --tag="czerasz/nginx-geoip2:1.17.4" .
