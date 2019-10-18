@@ -10,12 +10,12 @@ docker_version=$(docker -v)
 $project_dirirectory/scripts/docker-build.sh
 
 # Test for the proper Docker version
-if [[ `echo "$docker_version" | grep '^Docker version 1\.[89]'` ]]; then
-  echo 'Right Docker version is installed'
-else
-  echo 'Error: Docker > 1.8 required'
-  exit 1;
-fi
+# if [[ `echo "$docker_version" | grep '^Docker version 1\.[89]'` ]]; then
+#   echo 'Right Docker version is installed'
+# else
+#   echo 'Error: Docker > 1.8 required'
+#   exit 1;
+# fi
 
 # Remove the old Docker container
 if [ `docker ps -a --format '{{.Names}}' | grep "$container_name"` ]; then
