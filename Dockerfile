@@ -15,7 +15,9 @@ RUN apt-get update &&\
                        libtool \
                        libpcre3 \
                        libpcre3-dev \
-                       libssl-dev
+                       libssl-dev \
+		       zlib1g \
+		       zlib1g-dev
 
 # Download MaxMind GeoLite2 databases
 RUN mkdir -p /usr/share/GeoIP/ &&\
