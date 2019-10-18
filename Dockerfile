@@ -94,7 +94,7 @@ RUN ./configure \
     --with-mail \
     --with-mail_ssl_module \
     --with-file-aio \
-    --with-http_spdy_module \
+    --with-http_v2_module \
     --with-cc-opt='-g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2' \
     --with-ld-opt='-Wl,-z,relro -Wl,--as-needed' \
     --with-ipv6 \
