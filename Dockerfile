@@ -3,7 +3,7 @@ FROM nginx:1.17.4
 MAINTAINER Michał Czeraszkiewicz <contact@czerasz.com>
 
 # Set the reset cache variable
-ENV REFRESHED_AT 2016-05-10
+ENV REFRESHED_AT 2019-10-18
 
 # Update system and install required software
 RUN apt-get update &&\
