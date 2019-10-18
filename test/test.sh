@@ -24,7 +24,7 @@ fi
 
 docker run --name="$container_name" \
            -v $project_dirirectory/config/geoip2.conf:/etc/nginx/conf.d/geoip2.conf \
-           -d 'czerasz/nginx-geoip2:1.9.4'
+           -d 'czerasz/nginx-geoip2:1.17.4'
 
 #-->BEGIN: Test if Nginx returns the right headers
 container_ip=$(docker inspect -f '{{.NetworkSettings.IPAddress}}' "$container_name")
